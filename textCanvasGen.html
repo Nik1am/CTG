@@ -1,0 +1,83 @@
+<head>
+   <title>Генератор текста от чимса</title>
+   <link rel="icon" href="https://avatanplus.com/files/resources/original/5b575ac943cef164cd3aa23e.png">
+   <style>
+      #controls{
+         transform: scaleX(0.1);
+         position:absolute;
+         right:0px;
+         top:8px;
+         border-style:solid;
+         border-color:black;
+         font-family: 'CustomFont', sans-serif;
+         transition:0.3s ease-in-out;
+         background-color:#444444;
+      }
+      #controls:hover{
+         transform: scaleX(1);
+         transition:0.3s ease-in-out;
+         background-color:#454545;
+      }
+      body {
+         background-color:#333333;
+      }
+      #smile{
+         background-image: url(https://i.pinimg.com/originals/01/99/07/019907faa020a60609d6bc7b94161727.jpg);
+      }
+   @font-face {
+   font-family: "CustomFont";
+   src:url('18427.woff') format('woff');
+   }
+   </style>
+</head>
+<body><canvas id="smile" width="480" height="480" style="border-style: solid; border-color: black; border-width: 3px;">
+
+</canvas>
+
+<div id="controls">
+   <p>Can x<input type="number" id="canx" min="-1080" max="1080" value="480"></p>
+   <p>Can y<input type="number" id="cany" min="-1080" max="1080" value="480"></p>
+
+   <p>x<input type="range" id="x" min="0" max="1080" value="0"></p>
+   <p>y<input type="range" id="y" min="0" max="1080" value="0"></p>
+   <p>font NOTWORKS<input id="font" list="fonts"></p>
+   <p>size NOTWORKS<input type="range" id="fsize" min="0" max="480" value="48"></p>
+   <p>color<input type="color" id="color"></p>
+   <p>Text<textarea id="text" value="Text"></textarea></p>
+
+</div>
+<datalist id="fonts">
+   <option>monospace</option>
+   <option>serif</option>
+
+</datalist>
+<script>
+    let ctrl = document.getElementById("controls")
+    let col = document.getElementById("color")
+    let text = document.getElementById("text")
+    let size = document.getElementById("fsize")
+
+    window.onload = function() {
+      var drawingCanvas = document.getElementById('smile');
+      if(drawingCanvas && drawingCanvas.getContext) {
+         var context = drawingCanvas.getContext('2d');
+         var ctx = drawingCanvas.getContext('2d');
+
+            ctrl.oninput = function() {
+               let size = document.getElementById("fsize")
+               let font = `50px CustomFont`
+
+            ctx.clearRect(0,0,drawingCanvas.width,drawingCanvas.height);
+
+            ctx.canvas.width  = canx.value;
+            ctx.canvas.height = cany.value;
+
+            ctx.textBaseline = "hanging";
+            ctx.font = font;
+            ctx.fillText(text.value,x.value,y.value);
+            ctx.fillStyle = col.value;
+            };
+         };
+     };
+</script>
+</body>
