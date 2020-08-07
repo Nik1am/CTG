@@ -1,0 +1,26 @@
+      #controls{
+        transform: scaleX(0.1);
+        position:absolute;
+        right:0px;
+        top:8px;
+        border-style:solid;
+        border-color:black;
+        font-family: 'CustomFont', sans-serif;
+        transition:0.3s ease-in-out;
+        background-color:#444444;
+     }
+     #controls:hover{
+        transform: scaleX(1);
+        transition:0.3s ease-in-out;
+        background-color:#454545;
+     }
+     body {
+        background-color:#333333;
+     }
+     #smile{
+        background-image: url(https://i.pinimg.com/originals/01/99/07/019907faa020a60609d6bc7b94161727.jpg);
+     }
+  @font-face {
+  font-family: "CustomFont";
+  src:url('18427.woff') format('woff');
+  }

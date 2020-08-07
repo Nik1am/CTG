@@ -1,0 +1,28 @@
+<head>
+   <title>Генератор текста от чимса</title>
+   <link rel="icon" href="https://avatanplus.com/files/resources/original/5b575ac943cef164cd3aa23e.png">
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body><canvas id="smile" width="480" height="480" style="border-style: solid; border-color: black; border-width: 3px;">
+
+</canvas>
+
+<div id="controls">
+   <p>Can x<input type="number" id="canx" min="-1080" max="1080" value="480"></p>
+   <p>Can y<input type="number" id="cany" min="-1080" max="1080" value="480"></p>
+
+   <p>x<input type="range" id="x" min="0" max="1080" value="0"></p>
+   <p>y<input type="range" id="y" min="0" max="1080" value="0"></p>
+   <p>font NOTWORKS<input id="font" list="fonts"></p>
+   <p>size NOTWORKS<input type="range" id="fsize" min="0" max="480" value="48"></p>
+   <p>color<input type="color" id="color"></p>
+   <p>Text<textarea id="text" value="Text"></textarea></p>
+
+</div>
+<datalist id="fonts">
+   <option>monospace</option>
+   <option>serif</option>
+
+</datalist>
+<script src="script.js"></script>
+</body>
