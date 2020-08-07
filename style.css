@@ -1,18 +1,12 @@
       #controls{
-        transform: scaleX(0.1);
         position:absolute;
         right:0px;
-        top:8px;
+        top:0px;
         border-style:solid;
         border-color:black;
         font-family: 'CustomFont', sans-serif;
-        transition:0.3s ease-in-out;
-        background-color:#444444;
-     }
-     #controls:hover{
-        transform: scaleX(1);
-        transition:0.3s ease-in-out;
-        background-color:#454545;
+        background-color:#222222;
+        color:#fff838;
      }
      body {
         background-color:#333333;
@@ -22,5 +16,5 @@
      }
   @font-face {
   font-family: "CustomFont";
-  src:url('fonts/woff/mine.woff') format('woff');
+  src:url('mine.woff') format('woff');
   }
