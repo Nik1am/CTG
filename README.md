@@ -1,5 +1,6 @@
 # CanvasTextGenerator V0.4 beta
 
++ Click RMB on result to copy image!
 ### changelog:
 ```
 0.1 - first release
