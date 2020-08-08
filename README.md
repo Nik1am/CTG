@@ -1,6 +1,6 @@
-#CanvasTextGenerator V0.3 beta
+# CanvasTextGenerator V0.3 beta
 
-###changelog:
+### changelog:
 ```
 0.1 - first release
 
