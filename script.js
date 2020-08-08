@@ -1,6 +1,6 @@
     let ctrl = document.getElementById("controls")
     let text = document.getElementById("text")
-    let size = document.getElementById("fsize")
+    let tfont = document.getElementById("font")
 
     window.onload = function() {
       var drawingCanvas = document.getElementById('smile');
@@ -11,7 +11,7 @@
             ctrl.oninput = function() {
                let col = document.getElementById("textcolor")
                let size = document.getElementById("fsize")
-               let font = `50px CustomFont`
+               let font = `${size.value}`+`px `+`${tfont.value}`
 
             ctx.clearRect(0,0,drawingCanvas.width,drawingCanvas.height);
 

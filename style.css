@@ -4,7 +4,7 @@
         top:0px;
         border-style:solid;
         border-color:black;
-        font-family: 'CustomFont', sans-serif;
+        font-family: 'Minecraft', sans-serif;
         background-color:#222222;
         color:#fff838;
      }
@@ -18,7 +18,7 @@
         background-color: #333333;
         border:solid;
         border-color: #fff838;
-        font-family:'CustomFont';
+        font-family:'Minecraft';
         color: #fff838;
      }
      input[type='range']{
@@ -33,6 +33,6 @@
         background: #fff838;
      }
   @font-face {
-  font-family: "CustomFont";
+  font-family: "Minecraft";
   src:url('fonts/woff/mine.woff') format('woff');
   }
