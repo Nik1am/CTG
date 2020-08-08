@@ -9,4 +9,8 @@
 0.3 - Color changer fix
 0.3.1 - Ui edits
         Some input edits
+
+0.4 - Size changing
+      Font Changing
+      Ui edits
 ```
