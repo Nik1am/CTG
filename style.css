@@ -14,7 +14,25 @@
      #smile{
         background-image: url(https://i.pinimg.com/originals/01/99/07/019907faa020a60609d6bc7b94161727.jpg);
      }
+     input{
+        background-color: #333333;
+        border:solid;
+        border-color: #fff838;
+        font-family:'CustomFont';
+        color: #fff838;
+     }
+     input[type='range']{
+        -webkit-appearance: none;
+        height: 16;
+     }
+     input[type='range']::-webkit-slider-thumb{
+        -webkit-appearance: none;
+        height:16;
+        width:16;
+        cursor: pointer;
+        background: #fff838;
+     }
   @font-face {
   font-family: "CustomFont";
-  src:url('mine.woff') format('woff');
+  src:url('fonts/woff/mine.woff') format('woff');
   }
