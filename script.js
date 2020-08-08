@@ -1,5 +1,4 @@
     let ctrl = document.getElementById("controls")
-    let col = document.getElementById("color")
     let text = document.getElementById("text")
     let size = document.getElementById("fsize")
 
@@ -10,6 +9,7 @@
          var ctx = drawingCanvas.getContext('2d');
 
             ctrl.oninput = function() {
+               let col = document.getElementById("textcolor")
                let size = document.getElementById("fsize")
                let font = `50px CustomFont`
 
@@ -19,9 +19,9 @@
             ctx.canvas.height = cany.value;
 
             ctx.textBaseline = "hanging";
+            ctx.fillStyle = col.value;
             ctx.font = font;
             ctx.fillText(text.value,x.value,y.value);
-            ctx.fillStyle = col.value;
             };
          };
      };
