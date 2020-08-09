@@ -18,5 +18,7 @@
       Custom background color
       More fonts
 0.6 - Custom image background
+0.6.1 - Controls opacity changer
+        Bug fixes
 ```
 [Test it!](https://nik1am.github.io/CTG/)
