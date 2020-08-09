@@ -8,21 +8,24 @@
 </canvas>
 
 <div id="controls">
-   <p>Can x<input type="range" id="canx" min="0" max="1080" value="480" step="10"></p>
-   <p>Can y<input type="range" id="cany" min="0" max="1080" value="480" step="10"></p>
+   <p>Scale X<input type="range" id="canx" min="0" max="1080" value="480" step="10"></p>
+   <p>Scale Y<input type="range" id="cany" min="0" max="1080" value="480" step="10"></p>
 
    <p>X<input type="range" id="x" min="0" max="1080" value="0"></p>
    <p>Y<input type="range" id="y" min="0" max="1080" value="5"></p>
    <p>Font(clear for change)<input id="font" list="fonts" value="serif"></p>
    <p>Size<input type="number" id="fsize" min="0" max="480" value="48"></p>
-   <p>Color<input type="color" id="textcolor" value="#222222"></p>
+   <p id="dcolor">Color<input type="color" id="textcolor" value="#222222"></p>
    <p>Text<textarea id="text" value="Text">a</textarea></p>
-   <a href="https://github.com/Nik1am/CTG">| Github project page |</a>
+   <p>Custom background<input type="checkbox" id="cbg"> Color:<input type="color" id="bgcolor" value="#777777"></p>
+   <p>Debug mode (WIP)<input type="checkbox" id="debug"></p>
 </div>
 <datalist id="fonts">
    <option>monospace</option>
    <option>serif</option>
    <option>Minecraft</option>
+   <option>UniSansHeavyCaps</option>
+   <option>Konstruktor</option>
 
 </datalist>
 <script src="script.js"></script>

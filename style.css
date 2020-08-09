@@ -3,19 +3,19 @@
         right:0px;
         top:0px;
         border-style:solid;
-        border-color:black;
+        border-color:#66005E;
         font-family: 'Minecraft', sans-serif;
-        background-color:#222222;
+        background-image:url(ibg.png);
         color:#fff838;
      }
      body {
-        background-color:#333333;
+        background-image:url(bg.png);
      }
      #smile{
         background-image: url(https://i.pinimg.com/originals/01/99/07/019907faa020a60609d6bc7b94161727.jpg);
      }
      input{
-        background-color: #333333;
+      background-image:url(ibg.png);
         border:solid;
         border-color: #fff838;
         font-family:'Minecraft';
@@ -25,6 +25,9 @@
         -webkit-appearance: none;
         height: 16;
      }
+     input[type='color']{        
+        cursor: pointer;
+   }
      input[type='range']::-webkit-slider-thumb{
         -webkit-appearance: none;
         height:16;
@@ -32,7 +35,19 @@
         cursor: pointer;
         background: #fff838;
      }
+     textarea{
+      background-image:url(ibg.png);
+      color:#fff;
+     }
   @font-face {
   font-family: "Minecraft";
   src:url('fonts/woff/mine.woff') format('woff');
+  }
+  @font-face {
+  font-family: "UniSansHeavyCaps";
+  src:url('fonts/woff/8519.woff') format('woff');
+  }
+  @font-face {
+  font-family: "Konstruktor";
+  src:url('fonts/woff/KONSTRUKTORREGULAR.woff') format('woff');
   }
