@@ -1,4 +1,4 @@
-# CanvasTextGenerator V0.4 beta
+# CanvasTextGenerator V0.5 beta
 
 + Click RMB on result to copy image!
 ### changelog:
@@ -14,5 +14,8 @@
 0.4 - Size changing
       Font Changing
       Ui edits
+0.5 - Better Ui
+      Custom background color
+      More fonts
 ```
 [Test it!](https://nik1am.github.io/CTG/)
