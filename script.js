@@ -9,6 +9,9 @@
          var ctx = drawingCanvas.getContext('2d');
 
             ctrl.oninput = function() {
+               let opa = document.getElementById("opacity")
+               ctrl.style.opacity = opa.value+"%";
+
                let cbg = document.getElementById("cbg")
                let cibg = document.getElementById("cibg")
                let deb = document.getElementById("debug")
@@ -17,6 +20,7 @@
                let col = document.getElementById("textcolor")
                let size = document.getElementById("fsize")
                let font = `${size.value}`+`px `+`${tfont.value}`
+               let rsz = document.getElementById("resize")
 
             ctx.clearRect(0,0,drawingCanvas.width,drawingCanvas.height);
 
@@ -31,6 +35,11 @@
                var img = new Image();
                img.src = bgurl.value;
                ctx.drawImage(img,0,0,drawingCanvas.width,drawingCanvas.height);
+               
+            //if(rsz.checked){
+            //   ctx.canvas.width  = img.src.width;
+            //   ctx.canvas.height = img.src.height;
+            //}
             }
 
             ctx.textBaseline = "hanging";

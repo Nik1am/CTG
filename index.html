@@ -8,6 +8,8 @@
 </canvas>
 
 <div id="controls">
+   <p>Controls opacity <input type="range" id="opacity" min="10" max="100" value="100"></p>
+
    <p>Scale X<input type="range" id="canx" min="0" max="1080" value="480" step="10"></p>
    <p>Scale Y<input type="range" id="cany" min="0" max="1080" value="480" step="10"></p>
 
@@ -19,6 +21,7 @@
    <p>Text<textarea id="text" value="Text">a</textarea></p>
    <p>Custom background<input type="checkbox" id="cbg"> Color:<input type="color" id="bgcolor" value="#777777"></p>
    <p>Background image<input type="checkbox" id="cibg"> URL:<input type="text" id="bgurl"></p>
+   <!--<p><input id="resize" type="button" value="Resize image by background"></p>-->
    <p>Debug mode (WIP)<input type="checkbox" id="debug"></p>
 </div>
 <datalist id="fonts">
