@@ -10,7 +10,9 @@
 
             ctrl.oninput = function() {
                let cbg = document.getElementById("cbg")
+               let cibg = document.getElementById("cibg")
                let deb = document.getElementById("debug")
+               let bgurl = document.getElementById("bgurl")
                let cbgcol = document.getElementById("bgcolor")
                let col = document.getElementById("textcolor")
                let size = document.getElementById("fsize")
@@ -24,6 +26,11 @@
                ctx.fillStyle = cbgcol.value;
                ctx.rect(0,00,drawingCanvas.width,drawingCanvas.height);
                ctx.fill()
+            }
+            if(cibg.checked){
+               var img = new Image();   // Создает новый элемент изображения
+               img.src = bgurl.value;
+               ctx.drawImage(img,0,0,drawingCanvas.width,drawingCanvas.height);
             }
 
             ctx.textBaseline = "hanging";
