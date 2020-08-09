@@ -28,7 +28,7 @@
                ctx.fill()
             }
             if(cibg.checked){
-               var img = new Image();   // Создает новый элемент изображения
+               var img = new Image();
                img.src = bgurl.value;
                ctx.drawImage(img,0,0,drawingCanvas.width,drawingCanvas.height);
             }
