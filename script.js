@@ -35,18 +35,19 @@
                var img = new Image();
                img.src = bgurl.value;
                ctx.drawImage(img,0,0,drawingCanvas.width,drawingCanvas.height);
-               
-            //if(rsz.checked){
-            //   ctx.canvas.width  = img.src.width;
-            //   ctx.canvas.height = img.src.height;
-            //}
+               bgurl.style.display = "flex";
+               //if(rsz.checked){
+               //   ctx.canvas.width  = img.src.width;
+               //   ctx.canvas.height = img.src.height;
+               //}
+            }else{
+               bgurl.style.display = "none";
             }
 
             ctx.textBaseline = "hanging";
             ctx.fillStyle = col.value;
             ctx.font = font;
             ctx.fillText(text.value,x.value,y.value);
-            
             };
          };
      };
