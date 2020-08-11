@@ -20,5 +20,6 @@
 0.6 - Custom image background
 0.6.1 - Controls opacity changer
         Bug fixes
+0.6.2 - New fonts
 ```
 [Test it!](https://nik1am.github.io/CTG/)
