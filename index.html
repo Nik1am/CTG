@@ -3,11 +3,11 @@
    <link rel="icon" href="https://avatanplus.com/files/resources/original/5b575ac943cef164cd3aa23e.png">
    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body><canvas id="smile" width="480" height="480" style="border-style: solid; border-color: black; border-width: 3px;">
+<body><canvas id="smile" width="480" height="480">
 
 </canvas>
 
-<div id="controls">
+<div id="controls" >
    <p>Controls opacity <input type="range" id="opacity" min="10" max="100" value="100"></p>
 
    <p>Scale X<input type="range" id="canx" min="0" max="1080" value="480" step="10"></p>
@@ -18,7 +18,7 @@
    <p>Font(clear for change)<input id="font" list="fonts" value="serif"></p>
    <p>Size<input type="number" id="fsize" min="0" max="480" value="48"></p>
    <p id="dcolor">Color<input type="color" id="textcolor" value="#222222"></p>
-   <p>Text<textarea id="text" value="Text">a</textarea></p>
+   <p>Text<input id="text" value="Text"></p>
    <p>Custom background<input type="checkbox" id="cbg"> Color:<input type="color" id="bgcolor" value="#777777"></p>
    <p>Background image<input type="checkbox" id="cibg"> URL:<input type="text" id="bgurl"></p>
    <!--<p><input id="resize" type="button" value="Resize image by background"></p>-->
@@ -30,7 +30,8 @@
    <option>Minecraft</option>
    <option>UniSansHeavyCaps</option>
    <option>Konstruktor</option>
-
+   <option>Wha?</option>
+   <option>square-deal</option>
 </datalist>
 <script src="script.js"></script>
 </body>
