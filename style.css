@@ -5,13 +5,13 @@
         border-style:solid;
         border-color:#7289da;
         font-family: 'Minecraft', sans-serif;
-        background-image:url(images/ibg.png);
+        background-image:url(https://nik1am.github.io/CTG/images/ibg.png);
         color:#fff838;
         padding-left: 10px;
         box-shadow: 0px 10px 109px -32px rgba(114,137,218,0.75);
      }
      body {
-        background-image:url(images/bg.png);
+        background-image:url(https://nik1am.github.io/CTG/images/bg.png);
      }
      #smile{
         background-image: url(https://i.pinimg.com/originals/01/99/07/019907faa020a60609d6bc7b94161727.jpg);
@@ -23,7 +23,7 @@
         display: none;
      }
      input{
-      background-image:url(images/ibg.png);
+      background-image:url(https://nik1am.github.io/CTG/images/ibg.png);
         border:solid;
         border-color: #fff838;
         font-family:'Minecraft';
@@ -44,7 +44,7 @@
         background: #fff838;
      }
      textarea{
-      background-image:url(images/ibg.png);
+      background-image:url(https://nik1am.github.io/CTG/images/ibg.png);
       color:#fff;
      }
   @font-face {
