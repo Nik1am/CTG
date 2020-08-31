@@ -67,4 +67,8 @@
   font-family: "square-deal";
   src:url('fonts/woff/square-deal.woff') format('woff');
   }
+  @font-face {
+  font-family: "Lobster";
+  src:url('fonts/woff/lobster.woff') format('woff');
+  }
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
