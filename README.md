@@ -21,5 +21,6 @@
 0.6.1 - Controls opacity changer
         Bug fixes
 0.6.2 - New fonts
+0.7 - LoBsTeR uPdAtE
 ```
 [Test it!](https://nik1am.github.io/CTG/)
