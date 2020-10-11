@@ -1,4 +1,19 @@
-    let ctrl = document.getElementById("controls")
+const getDeviceType = () => {
+   const ua = navigator.userAgent;
+   if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
+     return "tablet";
+   }
+   if (
+     /Mobile|iP(hone|od|ad)|Android|BlackBerry|IEMobile|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(
+       ua
+     )
+   ) {
+     return "mobile";
+   }
+   return "desktop";
+ };
+ 
+   let ctrl = document.getElementById("controls")
     let text = document.getElementById("text")
     let tfont = document.getElementById("font")
 
@@ -9,9 +24,13 @@
          var ctx = drawingCanvas.getContext('2d');
 
             ctrl.oninput = function() {
+
+               var img = drawingCanvas.toDataURL("image/png");
+
                let opa = document.getElementById("opacity")
                ctrl.style.opacity = opa.value+"%";
 
+               let dwnld = document.getElementById("download") 
                let cbg = document.getElementById("cbg")
                let cibg = document.getElementById("cibg")
                let deb = document.getElementById("debug")
@@ -24,6 +43,7 @@
 
             ctx.clearRect(0,0,drawingCanvas.width,drawingCanvas.height);
 
+
             ctx.canvas.width  = canx.value;
             ctx.canvas.height = cany.value;
             if(cbg.checked){
@@ -31,6 +51,7 @@
                ctx.rect(0,00,drawingCanvas.width,drawingCanvas.height);
                ctx.fill()
             }
+
             if(cibg.checked){
                var img = new Image();
                img.src = bgurl.value;
@@ -48,6 +69,12 @@
             ctx.fillStyle = col.value;
             ctx.font = font;
             ctx.fillText(text.value,x.value,y.value);
+
+            if(dwnld.checked){
+               document.write('<img src="'+img+'" id="resultimg"/>');
+               let ri = document.getElementById("resultimg")
+               ri.style.border = "solid";
+            };
             };
          };
      };

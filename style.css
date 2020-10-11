@@ -5,13 +5,16 @@
         border-style:solid;
         border-color:#7289da;
         font-family: 'Minecraft', sans-serif;
-        background-image:url(https://nik1am.github.io/CTG/images/ibg.png);
+        background-image:url(images/ibg.png);
         color:#fff838;
         padding-left: 10px;
         box-shadow: 0px 10px 109px -32px rgba(114,137,218,0.75);
      }
      body {
-        background-image:url(https://nik1am.github.io/CTG/images/bg.png);
+        background-image:url(images/bg.png);
+     }
+     #version{
+        
      }
      #smile{
         background-image: url(https://i.pinimg.com/originals/01/99/07/019907faa020a60609d6bc7b94161727.jpg);
@@ -23,7 +26,7 @@
         display: none;
      }
      input{
-      background-image:url(https://nik1am.github.io/CTG/images/ibg.png);
+      background-image:url(images/ibg.png);
         border:solid;
         border-color: #fff838;
         font-family:'Minecraft';
@@ -44,7 +47,7 @@
         background: #fff838;
      }
      textarea{
-      background-image:url(https://nik1am.github.io/CTG/images/ibg.png);
+      background-image:url(images/ibg.png);
       color:#fff;
      }
   @font-face {
@@ -60,7 +63,7 @@
   src:url('fonts/woff/KONSTRUKTORREGULAR.woff') format('woff');
   }
   @font-face {
-  font-family: "Wha?";
+  font-family: "18427";
   src:url('fonts/woff/18427.woff') format('woff');
   }
   @font-face {
@@ -68,7 +71,7 @@
   src:url('fonts/woff/square-deal.woff') format('woff');
   }
   @font-face {
-  font-family: "Lobster";
-  src:url('fonts/woff/Lobster-Regular.woff') format('woff');
-  }
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+   font-family: "Lobster";
+   src:url('fonts/woff/Lobster-Regular.woff') format('woff');
+   }
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
