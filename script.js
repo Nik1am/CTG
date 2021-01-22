@@ -25,7 +25,6 @@ const getDeviceType = () => {
 
             ctrl.oninput = function() {
 
-               var img = drawingCanvas.toDataURL("image/png");
 
                let opa = document.getElementById("opacity")
                ctrl.style.opacity = opa.value+"%";
@@ -71,6 +70,7 @@ const getDeviceType = () => {
             ctx.fillText(text.value,x.value,y.value);
 
             if(dwnld.checked){
+               var img = drawingCanvas.toDataURL("image/png");
                document.write('<img src="'+img+'" id="resultimg"/>');
                let ri = document.getElementById("resultimg")
                ri.style.border = "solid";
